@@ -409,7 +409,6 @@ from folium.map import CustomPane
 m.add_child(CustomPane("batas-top", z_index=650))  # supaya garis batas di atas marker
 
 # === Muat file GeoJSON batas tanpa GeoPandas ===
-import json, os
 
 @st.cache_data(show_spinner=False)
 def load_geojson(path: str):
